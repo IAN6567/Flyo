@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+.logo img {
+  height: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: GREY;
+  padding: 10px 20px;
+}
+nav a:visited {
+  color: red;
+}
+nav a:hover {
+  background-color: lightgrey;
+}
+nav a.active {
+  color: orangered;
+}
+input:active {
+  border-color: red;
+  outline-color: red;
+}
+input {
+  padding: 10px 20px;
+}
+input:focus {
+  border-color: red;
+  outline-color: red;
+}
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+button:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 10px 60px;
+}
+.hero img {
+  width: 100%;
+}
+.hero > div {
+  flex: 1;
+  /*this makes sure that the 
+  two divisions are of equal sizes*/
+}
+h1 {
+  font-size: 46px;
+}
