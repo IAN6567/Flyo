@@ -1,0 +1,158 @@
+/* === GENERAL RESET === */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* === HEADER === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+.logo img {
+  height: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: grey;
+  padding: 10px 20px;
+}
+nav a:hover {
+  background-color: lightgrey;
+}
+nav a.active {
+  color: orangered;
+}
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
+}
+.hero > div {
+  flex: 1;
+}
+.hero img {
+  width: 100%;
+}
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.hero p {
+  margin-bottom: 20px;
+}
+.hero input,
+.early-access input {
+  padding: 10px 20px;
+  width: 60%;
+  margin-right: 10px;
+}
+.hero button,
+.early-access button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blueviolet;
+}
+
+/* === PRODUCTIVE SECTION === */
+.productive {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+  gap: 40px;
+}
+.productive .left-side,
+.productive .right-side {
+  flex: 1;
+}
+.productive img {
+  width: 100%;
+}
+.productive h2 {
+  font-size: 32px;
+}
+.productive a {
+  color: hsl(170, 45%, 43%);
+  text-decoration: underline;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+/* === TESTIMONIAL === */
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.testimonial footer {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.testimonial img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* === EARLY ACCESS SECTION === */
+.early-access {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+}
+.early-access input {
+  width: 60%;
+}
+.early-access form {
+  display: flex;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+}
+footer img {
+  height: 40px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero,
+  .productive,
+  .early-access {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero input,
+  .early-access input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .early-access form {
+    flex-direction: column;
+    align-items: center;
+  }
+}

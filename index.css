@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -28,8 +31,8 @@ input {
   padding: 10px 20px;
 }
 input:focus {
-  border-color: red;
-  outline-color: red;
+  border-color: blue;
+  outline-color: blue;
 }
 button {
   background-color: blue;
@@ -56,4 +59,129 @@ button:hover {
 }
 h1 {
   font-size: 46px;
+}
+.productive {
+  display: flex;
+  padding: 10px 20px;
+  background-color: hsl(240, 75%, 98%);
+}
+.productive > div {
+  flex: 1;
+}
+.productive .right-side img {
+  width: 100%;
+}
+.middle-down {
+  display: flex;
+}
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: o 4px 6px rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.testimonial-author h3 {
+  margin: 0;
+}
+.testimonial-author p {
+  margin: 0;
+}
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.productive a {
+  color: hsl(170, 45%, 43%);
+  text-underline-offset: 8px;
+}
+.productive a:hover {
+  color: hsl(170, 61%, 29%);
+}
+.early-access {
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+  display: flex;
+  padding: 30px 60px;
+  align-items: center;
+}
+.early-access > * {
+  flex: 1;
+}
+.early-access input {
+  display: block;
+  width: 70%;
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  padding: 40px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+.footer div:not(:last-child)a {
+  display: block;
+  color: inherit;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-contact p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.footer-contact img {
+  margin-right: 15px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+.link-column a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 6px 0;
+}
+.link-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a img {
+  width: 24px;
+  margin: 0 8px;
+}
+.footer-social a:hover img {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.background-pattern {
+  background-image: url("./images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 100px;
+  background-position: center;
 }
